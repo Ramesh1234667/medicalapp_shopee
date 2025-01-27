@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cart</title>
+    <style>
+    </style>
+    <script src="addtocart.js"></script>
+    <script>
+      
+        function Delete(e){
+            let items=[];
+            JSON.parse(localStorage.getItem('items')).map(data=>{
+                if(data.id != e.parentElement.parentElement.children[0].textContent){
+                    items.push(data);
+                }
+            });
+            localStorage.setItem('items',JSON.stringify(items));
+            window.location.relaod();
+        };
+    </script>
+    <style>
+    body{
+        background-color:rgba(0, 151, 178,0.2);
+       
+        
+    }
+     table, th, td {    
+        border: 1px solid black;  
+        margin-left: auto;  
+        margin-right: auto;  
+        border-collapse: collapse;    
+        width:50%;  
+        text-align: center;  
+        font-size: 1.4rem;
+        margin-bottom: 3rem;  
+        
+    
+        }    
+        .cartBox{
+            text-align: center;  
+            font-size: 1.4rem;
+            box-shadow: 0 0 10px black	;
+			background-color: white;  
+            box-sizing: border-box;
+            margin: 5%;
+
+           
+        }
+        .cartBox p{
+            color: #0097b2;
+            font-size:2.5rem ;
+        }
+        .cartBox p span{
+            color:black;
+        } 
+        
+        /*Responsive*/
+        @media (max-width:768px){
+        .cartBox{
+            text-align: center;  
+            font-size: 1rem;
+            box-shadow: 0 0 10px black	;
+			background-color: white;  
+            box-sizing: border-box;
+            margin: 5% auto ;
+
+        } 
+        .cartBox p{
+            font-weight: bolder;
+            font-size: 2.5rem;
+        }
+        
+        table, th, td {    
+        border: 1px solid black;  
+        margin-left: auto;  
+        margin-right: auto;  
+        border-collapse: collapse;    
+        width: 50%;  
+        text-align: center;  
+        font-size: 1.3rem;
+        margin-bottom: 3rem;  
+        }    
+    } 
+    @media (max-width:400px){
+        .cartBox{
+            font-size: 0.8rem;
+            margin: 5% auto ;
+        } 
+        .cartBox p{
+            
+            font-size: 2rem;
+        }
+        
+        table, th, td {         
+        text-align: center;  
+        font-size: 0.8rem;
+        margin-bottom: 3rem;  
+        }    
+
+    }
+    </style>
+</head>
+<body>
+    <div class="cartBox" >
+		<div class="cart" >
+			<h1>Cart</h1>
+			<table></table>
+		</div>
+        <p>Total Quantity : <span>0</span></p>
+	</div>
+
+    
+</body>
+</html>

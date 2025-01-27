@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>E-commerce website</title>
+	
+	<style type="text/css">
+		html{
+		font-size: 70%;
+		scroll-padding-top: 6rem;
+		scroll-behavior: smooth;
+		}
+		.image #home img{
+			margin-top: 5%;
+		}
+		.image img,.about .image img{
+			
+			width: 80%;
+			height: 60%;
+			margin-left: 10%;
+			position: static;
+		}
+		ul{
+			text-align: right;
+		}
+		body{
+			margin: 0 auto;
+
+		}
+		nav header{
+			font-size: 2.5rem	;
+			padding: 0.2rem;
+			margin: center auto;
+			text-align:left;
+			font-weight: bolder;
+
+		}
+		nav header span{
+			color:#14cdd3;
+			font-size: 2.5rem;
+		}
+		nav{
+			box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+			padding: .8rem 5%;
+			position: fixed;
+			top: 0;
+			z-index: 1000;
+			left: 0;
+			right: 0;
+			background: #fff;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+		}
+		nav a{
+			text-decoration: none;
+			font-size: 2.5rem;
+			padding: 0.1rem  ;
+			margin: 0 2rem;
+			color: rgb(0, 0, 0);
+		}
+		nav a:hover{
+			
+			color:#44c0c5;
+
+		}
+		#end{
+			font-weight: bolder;
+			color: #00a8eb;
+			font-size: 1.4rem;
+		}
+		
+		/* Responsive  */
+	@media (max-width:768px){
+		nav header{
+			font-size: 1.5rem	;
+			padding: 0.1rem;
+			margin: center auto;
+			text-align:left;
+			font-weight: bolder;
+
+		}
+		nav{
+			box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+			padding: 0.5rem 9%;
+			position: fixed;
+			top: 0;
+			z-index: 1000;
+			left: 0;
+			right: 0;
+			background: #fff;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+		}
+		nav a{
+			text-decoration: none;
+			font-size: 1.8rem;
+			padding: 0.1rem  ;
+			margin: 0 1rem;
+			color: rgb(0, 0, 0);
+		}
+		nav header span{
+			color:#14cdd3;
+			font-size: 1.8rem;
+		}
+		.image #home img{
+			margin-top:5rem;
+		}
+		nav header span ,nav header {
+			font-size: 2.2rem;
+		}
+	}
+		@media (max-width:400px ){
+			nav header span ,nav header {
+			font-size: 1.8rem;
+		}
+		nav header span{
+			color:#14cdd3;
+			font-size: 1.8rem;
+		}
+		nav a{
+			font-size: 1rem;
+			padding: 0.1rem  ;
+			margin: 0 0.5rem;
+			color: rgb(0, 0, 0);
+			text-align: center;
+		}
+		.image #home img{
+			margin-top:6rem;
+		}
+		}
+		body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #eef2f3;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.contact {
+    background: white;
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 450px;
+    margin-top: 120px;
+    transition: transform 0.3s;
+}
+
+.contact:hover {
+    transform: scale(1.02);
+}
+
+h1 {
+    font-size: 22px;
+    color: #222;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.sub-contact h2 {
+    font-size: 18px;
+    color: #444;
+    margin-bottom: 15px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: all 0.3s;
+    background: #f9f9f9;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #28a745;
+    outline: none;
+    background: #fff;
+}
+
+textarea {
+    resize: none;
+}
+
+input[type="submit"] {
+    background-color: #28a745;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 17px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+input[type="submit"]:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .contact {
+        width: 90%;
+        padding: 40px;
+    }
+}
+
+@media (max-width: 400px) {
+    h1 {
+        font-size: 20px;
+    }
+    .sub-contact h2 {
+        font-size: 16px;
+    }
+}
+.tagline h1{
+	font-weight: bold;
+	color:#627d7e;
+	margin-top: 2%;
+	font-size: 2.3rem;
+}
+
+
+	</style>
+</head>
+<body >
+    <nav>
+        <header>
+            <span>Anitha</span> Med Choices
+        </header>
+        <div class="navbar">
+            <a href="#home">Home</a>
+            <a href="item.html">Medicines</a>
+            <a href="login.html">Login</a>
+            <a href="cart.html">MyCart</a>
+        </div>
+    </nav>
+    
+    <div class="image">
+        <div id="home">
+            <img src="images/WriteGo (3).png" alt="logo_of_company">
+        </div>
+    </div>
+	<div class="tagline">
+		<h1>There's nothing more important than our good health - that's our principal capital asset</h1>
+	</div>
+    <div class="contact"> 
+        <div class="sub-contact">
+            <h2>Get in Touch: </h2>
+            <form action="" method="post">
+                <label for="name">Name: </label>
+                <input type="text" name="name" id="name" required><br><br>
+                
+                <label for="email">Email: </label>
+                <input type="email" name="email" id="email" required><br><br>
+                
+                <label for="txt">Message:</label>
+                <textarea id="txt" name="txt" rows="4" cols="50" required></textarea><br><br>
+                
+                <input type="submit" value="Send Message">
+            </form>
+        </div>
+    </div>
+    
+    <div id="end" align="center">
+        <h2>Anitha Med Choices</h2>
+        <p><h3><b>All rights Reserved | Developed and Managed</b></h3></p>
+    </div>
+</body>
+</html>

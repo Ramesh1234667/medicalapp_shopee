@@ -1,0 +1,133 @@
+		body{
+			
+			background-size: 100%;
+			box-sizing: border-box;
+			background-color:rgba(0, 151, 178,0.2);
+			}
+		.style{
+			font-family: arial;
+			width: 30%;
+			color: #0097b2;
+			padding: 5%;
+			box-shadow: 0 0 10px black	;
+			background-color: white;
+			margin: 4% auto ;
+			}
+		form{
+			justify-content: center;
+			
+		}
+		.style h2{
+			font-size: 2rem;
+			text-align: center;
+		}
+		.form-group label{
+			display: block;
+			margin: 3% 0;
+			font-size: 1.5rem;
+			margin-left: 1.5%;
+			display: flex;
+		}
+		.form-control{
+			
+			font-size: 1.2rem;
+			height: 10%;
+			width: auto;
+			display: flex;
+			
+		}
+		
+		.btn{
+
+			margin: 5% auto ;
+			background: #007286;
+			color: white;
+			border: none;
+			box-shadow: 0px 5px 10px antiquewhite;
+			width: 50%;
+			font-size: 1.2rem;
+			padding: 2.5%;
+
+		}
+		.cls p{
+			color: #007286;
+		}
+		.cls{
+			padding: 6%;
+			
+		}
+		.cls .btn a{
+			text-decoration: none;
+			
+		}
+		.cls{
+			display:inline;
+		}
+		/*Responsive*/
+		@media (max-width:900px){
+			.form-control{
+				
+				font-size: 1.2rem;
+				height: 10%;
+				width: auto;
+				display: flex;
+				
+			}
+			.style{
+				width: 60%;
+				color: #0097b2;
+				padding: 3%;
+				box-shadow: 0 0 10px black	;
+				background-color: white;
+				margin: 4% auto ;
+				}
+				.btn{
+
+					margin: 5% auto ;
+					background: #007286;
+					color: white;
+					border: none;
+					box-shadow: 0px 5px 10px antiquewhite;
+					width: 30%;
+					font-size: 1.2rem;
+			}
+			.style h2{
+				font-size: 2rem;
+				text-align: center;
+			}
+		}
+		@media (max-width:600px){
+			.form-control{
+				
+				font-size: 1rem;
+				height: 8%;
+				width: auto;
+				display: flex;
+				width: 70%;
+				
+			}
+			.style{
+				width: 80%;
+				color: #0097b2;
+				padding: 3%;
+				box-shadow: 0 0 10px black	;
+				background-color: white;
+				margin: 4% auto ;
+				}
+			.btn{
+
+					margin: 5% auto ;
+					background: #007286;
+					color: white;
+					border: none;
+					box-shadow: 0px 5px 10px antiquewhite;
+					width: 15%;
+					font-size: 1rem;
+				}
+			.style h2{
+				font-size: 1rem;
+				text-align: center;
+			}
+			
+		}
+	
